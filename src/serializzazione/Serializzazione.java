@@ -45,7 +45,7 @@ public class Serializzazione {
         System.out.println(v2);
         
        
-        float v3= (float)(double)IS.readObject();
+        float v3= (float)(double)IS.readObject(); // il primo cast deve essere nel tipo di oggetto che leggiamo
         System.out.println(v3);
         
         
