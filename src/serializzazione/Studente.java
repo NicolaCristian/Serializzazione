@@ -5,11 +5,13 @@
  */
 package serializzazione;
 
+import java.io.Serializable;
+
 /**
  *
  * @author nicola.cristian
  */
-public class Studente {
+public class Studente implements Serializable{
     
     private String nome,cognome;
     private int num_registro;
@@ -19,6 +21,12 @@ public class Studente {
         this.cognome = cognome;
         this.num_registro = num_registro;
     }
+
+    public String getAll() {
+        return num_registro+", nome: "+nome+", cognome: "+cognome;
+    }
+
+
 
 
 
